@@ -8,6 +8,13 @@ namespace BLE
         public MainPage()
         {
             InitializeComponent();
+
+            var toolbarItem = new ToolbarItem
+            {
+                Text = "Toolbar",
+                Icon = "icon"
+            };
+            ToolbarItems.Add(toolbarItem);
         }
 
         async void OnNavigateButtonClicked(object sender, EventArgs e)
